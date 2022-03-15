@@ -47,18 +47,22 @@ Once it is installed:
 
 1) Choose `POST` from the dropdown
 2) Type `localhost:8080/deposit` into the URL
-3) Under the authentication header, select type: `Basic Auth`
-4) Enter a username and password from the above list of available users
-5) Hit send. If you typed in an existing username and password, you'll get a success message, with a 200 status
+3) Under the Body header, select `raw` and choose `JSON` from the drop down
+4) Now enter what value you would like to deposit into the form below. Ie 50
+5) Under the authentication header, select type: `Basic Auth`
+6) Enter a username and password from the above list of available users
+7) Hit send. If you typed in an existing username and password, you'll get a success message, with a 200 status
    1) If authentication failed, the user / password was wrong or doesn't exist and you'll get a `401 Unauthorized`
 
 ### /withdrawal end point
 
 1) Choose `POST` from the dropdown
 2) Type `localhost:8080/withdrawal` into the URL
-3) Under the authentication header, select type: `Basic Auth`
-4) Enter a username and password from the above list of available users
-5) Hit send. If you typed in an existing username and password, you'll get a success message, with a 200 status
+3) Under the Body header, select `raw` and choose `JSON` from the drop down
+4) Now enter what value you would like to withdrawal into the form below. Ie 50
+5) Under the authentication header, select type: `Basic Auth`
+6) Enter a username and password from the above list of available users
+7) Hit send. If you typed in an existing username and password, you'll get a success message, with a 200 status
    1) If authentication failed, the user / password was wrong or doesn't exist and you'll get a `401 Unauthorized`
 
 ### Additional info about the project
