@@ -19,6 +19,7 @@ You can add to these by disabling the frame options in the WebSecurityConfig.jav
 1) If running on a unix based operating system, download sdkman by running `curl -s "https://get.sdkman.io" | bash` in your terminal
    1) From here, you can run `sdk install java 11.0.14.9.1-amzn` to install java 11. After it's finished installing, type `Y`
 2) If running on Windows, go to `https://www.oracle.com/java/technologies/downloads/#java11` and install the `.exe` and run it.
+   1) If using Windows, also download a bash terminal to run the commands below. Ie `https://gitforwindows.org/` 
 
 ### Running the app
 
@@ -38,7 +39,7 @@ Once it is installed:
 
 1) Choose `GET` from the dropdown 
 2) Type `localhost:8080/balance` into the URL 
-3) Under the authentication header, select type: `Basic Auth`
+3) Under the Authorization header, select type: `Basic Auth`
 4) Enter a username and password from the above list of available users
 5) Hit send. If you typed in an existing username and password, you'll get a balanced returned, with a 200 status
    1) If authentication failed, the user / password was wrong or doesn't exist and you'll get a `401 Unauthorized`
@@ -49,7 +50,7 @@ Once it is installed:
 2) Type `localhost:8080/deposit` into the URL
 3) Under the Body header, select `raw` and choose `JSON` from the drop down
 4) Now enter what value you would like to deposit into the form below. Ie 50
-5) Under the authentication header, select type: `Basic Auth`
+5) Under the Authorization header, select type: `Basic Auth`
 6) Enter a username and password from the above list of available users
 7) Hit send. If you typed in an existing username and password, you'll get a success message, with a 200 status
    1) If authentication failed, the user / password was wrong or doesn't exist and you'll get a `401 Unauthorized`
@@ -60,7 +61,7 @@ Once it is installed:
 2) Type `localhost:8080/withdrawal` into the URL
 3) Under the Body header, select `raw` and choose `JSON` from the drop down
 4) Now enter what value you would like to withdrawal into the form below. Ie 50
-5) Under the authentication header, select type: `Basic Auth`
+5) Under the Authorization header, select type: `Basic Auth`
 6) Enter a username and password from the above list of available users
 7) Hit send. If you typed in an existing username and password, you'll get a success message, with a 200 status
    1) If authentication failed, the user / password was wrong or doesn't exist and you'll get a `401 Unauthorized`
