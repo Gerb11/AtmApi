@@ -22,11 +22,11 @@ You can add to these by disabling the frame options in the WebSecurityConfig.jav
 
 ### Running the app
 
-1) Via command line, go into the root directory of the project and `cd` into `./build/libs/` and run `java -jar atm-1.0.0.jar`. This will start the server on localhost:8080 and everything can be done from there
-2) Using command line from the root of the project, run `./gradlew bootRun` and the server will start
-   1) From here you can also run `./gradlew clean build` to build the project from scratch (this also runs the tests, and the jar will appear in the `./build/libs` location, same as above
+1) Using command line from the root of the project, run `./gradlew bootRun` and the server will start
+   1) From here you can also run `./gradlew clean build` to build the project from scratch (this also runs the tests, and the jar will appear in the `./build/libs` location)
+      1) Note the Jar Needs access to the `data` folder for the DB, so if running the jar by itself, you need to copy the `data` folder over as well
    2) To just run the tests, run `./gradlew clean test`
-3) Once the server is running on localhost:8080, you can utilize any process that allows you to hit an API end point. For this README, it will explain what to do using postman
+2) Once the server is running on localhost:8080, you can utilize any process that allows you to hit an API end point. For this README, it will explain what to do using postman
 
 ### Setting up postman
 You can download postman from: `https://www.postman.com/downloads/`
