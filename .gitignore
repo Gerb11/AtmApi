@@ -1,14 +1,10 @@
-.gradle
-/build/
+build/*
+!build/libs
 
-# Ignore Gradle GUI config
-gradle-app.setting
+/gradlew*
+/.gradle/
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+.idea/*
+out/*
 
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+.DS_Store
